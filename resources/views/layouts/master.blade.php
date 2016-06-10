@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>
-        {{-- Yield the title if it exists, otherwise default to 'Foobooks' --}}
-        @yield('title','Foobooks')
+        {{-- Yield the title if it exists, otherwise default to 'Marketplaceniaja' --}}
+        @yield('title','Marketplaceniaja')
     </title>
 
 	<meta charset='utf-8'>
@@ -16,7 +16,7 @@
 	
 	<link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/lumen/bootstrap.min.css' rel='stylesheet'>
 	
-	<link href='/css/foobooks.css' rel='stylesheet'>
+	<link href='/css/marketplaceniaja.css' rel='stylesheet'>
 
     {{-- Yield any page specific CSS files or anything else you might want in the <head> --}}
     @yield('head')
@@ -31,47 +31,12 @@
     <header>
 		<a href='/'>
         <img
-        src='http://making-the-internet.s3.amazonaws.com/laravel-foobooks-logo@2x.png'
-        style='width:300px'
-        alt='Foobooks Logo'>
+        src='/images/logo/logo.jpg'
+        style='width:720px'
+        alt='Marketplaceniaja Logo'>
 		</a>
 		
-	@unless (Auth::check())
-		<div class="topright">
-			<nav>
-				<ul>
-					<a href='/register'>Sign up</a> &nbsp; &nbsp;<a href='/login'>Log in</a> 
-				</ul>
-			</nav>
-		</div>
-	@else
-		<div class="topright">
-			<nav>
-				<ul>
-					<a href='/logout'>Log out</a> 
-				</ul>
-			</nav>
-		</div>
-	@endunless
-
-		
-
     </header>
-	
-	@if (Auth::check())
-		<nav>
-			<ul>
-				<li><a href='/books'>View all books</a></li>
-				<li><a href='/books/create'>Add a new book</a></li>
-			</ul>
-		</nav>
-	@else
-	<nav>
-		<ul>
-			<li><a href='/books'>View all books</a></li>
-		</ul>
-	</nav>
-	@endif
 	
 	
     <section>
@@ -81,8 +46,8 @@
 
     <footer>
         &copy; {{ date('Y') }} &nbsp;&nbsp;
-		<a href='https://github.com/phatosas/foobooks' class='fa fa-github' target='_blank'> View Local </a>
-		<a href='http://foobooks.osaslog.com/' class='fa fa-link' target='_blank'> View Live</a>
+		<a href='https://github.com/phatosas/marketplaceniaja' class='fa fa-github' target='_blank'> View Local </a>
+		<a href='http://marketplaceniaja/' class='fa fa-link' target='_blank'> View Live</a>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

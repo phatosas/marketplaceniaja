@@ -1,45 +1,88 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.master')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+@section('title')
+    Marketplaceniaja
+@stop
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+@section('head')
+	<link href='/css/marketplaceniaja.css' rel='stylesheet'>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+@stop
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+@section('content')
+	<h1> Nigeria's Online Market </h1>
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+	<h2> <blockquote> 
+	<a href = "hotelsandhousing.html"> Hotels/Housing </a>      
+	<a href = "furniture.html"> Furniture  </a>      
+	<a href = "Household-utilities.html"> Household-utilities  </a>
+	<a href = "Household-utilities.html"> Fashion/Clothing </a>         
+	<a href = "CarsandParts.html"> Cars/Parts </a>
+	<a href = "CarsandParts.html"> Events/Ceremonies </a> 
+	<a href = "CarsandParts.html"> Handyman </a>
+	<a href = "Jobs.html"> Jobs </a>
+	</blockquote>
+	</h2>
+
+	<p>
+	<span> 
+		<a href = "Deals.html"> Deals </a> <br> <br>
+		<a href = "Bids.html"> Bids </a> <br> <br>
+		<a href = "Delivery.html"> Delivery </a> <br> <br>
+		<a href = "FraudWatch.html"> FraudWatch </a> <br> <br>
+		<a href = "ReturnPolicy.html"> ReturnPolicy </a> <br> <br>
+		<a href = "ContactUs.html"> ContactUs </a> <br>	<br>
+	</span >
+	
+	
+	<table style="width:80%" align ="center">
+	 <tr> 
+	 <td> <li> Anambra </li> </td> <td><li>  Akwa Ibom </li> </td> <td><li> Adamawa </li> </td>  
+	 <td> <li> Abia </li> </td> </tr> 
+	 
+	 <tr>
+	 <td><li> Abuja</li> </td> <td><li>Bauchi </li> </td>  <td> <li>Bayelsa</li> </td> 
+	 <td><li> Benue </li> </td></tr>
+	 
+	 <tr>
+	 <td><li> Borno </li></td> <td><li> Cross River </li> </td> <td> <li> Delta </li></td> 
+	 <td> <li> Ebonyi </li> </td> </tr>
+	 
+	<tr> 
+	<td><li> Edo </li></td> <td><li> Ekiti </li></td> <td><li> Enugu </li></td>
+	<td><li> Gombe </li> </td> </tr>
+
+	<tr>
+	<td><li>Imo </li></td> <td><li> Jigawa </li></td> <td><li> Kaduna </li></td>
+	<td><li> Kano </li></td></tr>
+
+	<tr>
+	<td><li> Katsina </li></td> <td><li> Kebbi </li></td> <td><li> Kogi </li></td> 
+	<td><li> Kwara </li></td></tr>
+
+	<tr> 
+	<td><li>  Lagos </li></td> <td> <li>Nasarawa </li> </td> <td><li> Niger </li></td>
+	<td><li>  Ogun </li></td></tr>
+
+	<tr>
+	<td> <li>  Ondo </li></td> <td> <li> Osun </li></td> <td><li> Oyo </li> </td>
+	<td> <li> Plateau </li></td></tr>
+
+	<tr> <td><li> Rivers </li></td> <td><li> Sokoto </li></td> <td><li> Taraba </li></td> 
+	<td> <li> Yobe </li></td> </tr>
+
+	<tr> <td> <li> Zamfara </li> </td> </tr>
+
+	</table>
+
+@stop
+
+{{--
+This `body` section will be yielded right before the closing </body> tag.
+Use it to add specific things that *this* View needs at the end of the body,
+such as a page specific JavaScript files.
+--}}
+@section('body')
+
+@stop

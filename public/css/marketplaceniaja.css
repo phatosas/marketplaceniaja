@@ -28,7 +28,8 @@ footer{
 
 /* End Sticky Footer */
 
-blockquote { 
+blockquote {
+		position: relative;
 	border:solid;
 	color:#246B24;
 	border-left-width:2px;
@@ -101,7 +102,7 @@ tr {
 	
 span {
 	display:block;
-    float:left;
+    float:  left;
     border: 1px dotted black;
     margin: 20px 60px 20px 20px;
 	}
