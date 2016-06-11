@@ -7,13 +7,12 @@
 
 @section('head')
 	<link href='/css/marketplaceniaja.css' rel='stylesheet'>
-
 @stop
 
 @section('content')
 	<h1> Nigeria's Online Market </h1>
 
-	<h2> <blockquote> 
+	<blockquote> 
 	<a href = "hotelsandhousing.html"> Hotels/Housing </a>      
 	<a href = "furniture.html"> Furniture  </a>      
 	<a href = "Household-utilities.html"> Household-utilities  </a>
@@ -23,20 +22,19 @@
 	<a href = "CarsandParts.html"> Handyman </a>
 	<a href = "Jobs.html"> Jobs </a>
 	</blockquote>
-	</h2>
+	
+	<div class="container">
+		<div id="sidebar">		
+			<p><a href = "Deals.html"> Deals </a></p>
+			<p><a href = "Bids.html"> Bids </a></p>
+			<p><a href = "Delivery.html"> Delivery </a></p>
+			<p><a href = "ReturnPolicy.html"> Return Policy </a></p>
+			<p><a href = "ContactUs.html"> Contact Us </a></p>
+		</div>
+	</div>
+	
 
-	<p>
-	<span> 
-		<a href = "Deals.html"> Deals </a> <br> <br>
-		<a href = "Bids.html"> Bids </a> <br> <br>
-		<a href = "Delivery.html"> Delivery </a> <br> <br>
-		<a href = "FraudWatch.html"> FraudWatch </a> <br> <br>
-		<a href = "ReturnPolicy.html"> ReturnPolicy </a> <br> <br>
-		<a href = "ContactUs.html"> ContactUs </a> <br>	<br>
-	</span >
-	
-	
-	<table style="width:80%" align ="center">
+	<table style="width:80%" align ="center" >
 	 <tr> 
 	 <td> <li> Anambra </li> </td> <td><li>  Akwa Ibom </li> </td> <td><li> Adamawa </li> </td>  
 	 <td> <li> Abia </li> </td> </tr> 

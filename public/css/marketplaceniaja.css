@@ -28,85 +28,25 @@ footer{
 
 /* End Sticky Footer */
 
-blockquote {
-		position: relative;
-	border:solid;
-	color:#246B24;
-	border-left-width:2px;
-	border-right-width:2px;
-	border-radius:1em;
-	-webkit-border-radius:1em;
-	word-spacing:50px;
-	text-align:center;
-	}
-
 section, header, nav{
 	padding-left:25px;
+	padding-right:25px;
 	padding-top:25px;
 }
 
 nav ul{
 	list-style-type:none;
-	left: 50%;
-	margin-left: -100px;
+	margin:0;
 	padding:0;
-	width:120px; 
-	float:center;
-	position: fixed;
 }
 
-
 nav ul li{
-	display:block;
-	color:white;
-	background-color:#246B24;
-	padding:2px;
+	display:inline;
+	background-color:#ccc;
+	padding:5px;
 	margin-right:5px;
 }
 
-		 
-h1 {
-	color:#246B24;
-	text-align:center;
-	font-size:1.5em
-	}
-		  
-
-h3 {
-	color:#246B24;
-	text-align:left;
-	font-size:0.7em;
-	font-family:tacoma;
-	font-weight:normal;
-	margin-left:2em
-	}
-	
-h4 {
-	text-align:center;
-	font-size:110%;
-	word-spacing:100px;
-	}
-		 
-a {
-	color:#246B24;
-	background-color:transparent;
-	text-decoration:none;
-	}
-
-th {
-	color:#246B24;
-	}
-tr {
-	color:#246B24;
-	}
-	
-span {
-	display:block;
-    float:  left;
-    border: 1px dotted black;
-    margin: 20px 60px 20px 20px;
-	}
-	
 /* Forms */
 
 label{
@@ -155,3 +95,65 @@ ul.errors{
 		text-align: right; 
 		letter-spacing: 2px;
 }
+
+blockquote {
+	border:solid;
+	color:#246B24;
+	border-left-width:2px;
+	border-right-width:2px;
+	border-radius:1em;
+	word-spacing:50px;
+	text-align:center;
+	}
+
+	
+span {
+	display:block;
+    float:  left;
+    border: solid;
+    margin: 20px 60px 20px 20px;
+	}
+	
+.container { 
+    width: 200px;
+	display:block;
+	float:  left;
+	position:relative; 
+	padding:0 0 0 5px; 
+	}
+
+#sidebar {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    width:50px;
+    background:#000;
+}
+		 
+h1 {
+	color:#246B24;
+	text-align:center;
+	font-size:1.5em
+	}
+		  
+
+		 
+a {
+	color:#246B24;
+	background-color:transparent;
+	text-decoration:none;
+	display: inline-block;
+	}
+
+th {
+	color:#246B24;
+
+	}
+tr {
+	color:#246B24;
+	}
+td {
+	padding-left: 100px;
+  text-align: left;
+  vertical-align: middle;
+}
+	

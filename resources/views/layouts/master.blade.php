@@ -32,12 +32,25 @@
 		<a href='/'>
         <img
         src='/images/logo/logo.jpg'
-        style='width:720px'
+        style='width:500px'
         alt='Marketplaceniaja Logo'>
 		</a>
 		
     </header>
 	
+	<nav>
+        <ul>
+            <li><a href='/products'>View all the products</a></li>
+            @if(Auth::check())
+                <li><a href='/product/search'>Search (with ajax!)</a></li>
+                <li><a href='/product/create'>Add a new product</a></li>
+                <li><a href='/logout'>Logout {{$user->name}}</a></li>
+            @else
+                <li><a href='/login'>Login</a></li>
+                <li><a href='/register'>Register</a></li>
+            @endif
+        </ul>
+    </nav>
 	
     <section>
         {{-- Main page content will be yielded here --}}
@@ -46,8 +59,8 @@
 
     <footer>
         &copy; {{ date('Y') }} &nbsp;&nbsp;
-		<a href='https://github.com/phatosas/marketplaceniaja' class='fa fa-github' target='_blank'> View Local </a>
-		<a href='http://marketplaceniaja/' class='fa fa-link' target='_blank'> View Live</a>
+		<a href='https://github.com/phatosas/marketplaceniaja' class='fa fa-github' target='_blank'> View on Github </a>
+		<a href='http://marketplaceniaja.com' class='fa fa-link' target='_blank'> View Live</a>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

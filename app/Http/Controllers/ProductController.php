@@ -6,16 +6,16 @@ use Illuminate\Http\Request;
 
 use marketplaceniaja\Http\Requests;
 
-class ShopController extends Controller
+class ProductController extends Controller
 {
-        /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function getIndex()
+    public function index()
     {
-		return 'get the index file';
+        //
     }
 
     /**
@@ -23,8 +23,9 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getCreate()
+    public function create()
     {
+        //
     }
 
     /**
@@ -33,8 +34,9 @@ class ShopController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function postCreate(Request $request)
+    public function store(Request $request)
     {
+        //
     }
 
     /**
@@ -43,8 +45,9 @@ class ShopController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function getShow($id)
+    public function show($id)
     {
+        //
     }
 
     /**
@@ -53,10 +56,10 @@ class ShopController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function getEdit($id)
+    public function edit($id)
     {
-
-	}
+        //
+    }
 
     /**
      * Update the specified resource in storage.
@@ -65,8 +68,9 @@ class ShopController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function postEdit(Request $request)
+    public function update(Request $request, $id)
     {
+        //
     }
 
     /**
@@ -75,7 +79,8 @@ class ShopController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function getDelete($id)
+    public function destroy($id)
     {
+        //
     }
 }
