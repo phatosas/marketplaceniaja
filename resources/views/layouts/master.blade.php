@@ -32,7 +32,7 @@
 		<a href='/'>
         <img
         src='/images/logo/logo.jpg'
-        style='width:500px'
+        style='width:700px'
         alt='Marketplaceniaja Logo'>
 		</a>
 		
@@ -42,9 +42,9 @@
         <ul>
             <li><a href='/products'>View all the products</a></li>
             @if(Auth::check())
-                <li><a href='/product/search'>Search (with ajax!)</a></li>
-                <li><a href='/product/create'>Add a new product</a></li>
-                <li><a href='/logout'>Logout {{$user->name}}</a></li>
+                <li><a href='/products/search'>Search (with ajax!)</a></li>
+                <li><a href='/products/create'>Add a new product</a></li>
+                <li><a href='/logout'>Logout</a></li>
             @else
                 <li><a href='/login'>Login</a></li>
                 <li><a href='/register'>Register</a></li>

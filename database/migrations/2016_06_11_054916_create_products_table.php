@@ -24,6 +24,9 @@ class CreateProductsTable extends Migration
 
 			# The rest of the fields...
 			$table->string('name');
+			$table->string('description');
+			$table->string('image_link');
+			$table->string('auth_id');
 			$table->binary('image');
 
 			# FYI: We're skipping the 'tags' field for now; more on that later.

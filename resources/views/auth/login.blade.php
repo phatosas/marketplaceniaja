@@ -4,7 +4,7 @@
 
     <p>Don't have an account? <a href='/register'>Register here...</a></p>
 
-    <h1>Login</h1>
+    <h2>Login</h2>
 
     @if(count($errors) > 0)
         <ul class='errors'>
@@ -20,12 +20,12 @@
 
         <div class='form-group'>
             <label for='email'>Email</label>
-            <input type='text' name='email' id='email' value='{{ old('email','jill@harvard.edu') }}'>
+            <input type='text' name='email' id='email' value='{{ old('email') }}'>
         </div>
 
         <div class='form-group'>
             <label for='password'>Password</label>
-            <input type='password' name='password' id='password' value='{{ old('password','helloworld') }}'>
+            <input type='password' name='password' id='password' value='{{ old('password') }}'>
         </div>
 
         <div class='form-group'>

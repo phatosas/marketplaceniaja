@@ -4,7 +4,7 @@
 
     <p>Already have an account? <a href='/login'>Login here...</a></p>
 
-    <h1>Register</h1>
+    <h12>Register</h2>
 
     @if(count($errors) > 0)
         <ul class='errors'>

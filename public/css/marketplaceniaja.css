@@ -104,7 +104,7 @@ blockquote {
 	border-radius:1em;
 	word-spacing:50px;
 	text-align:center;
-	}
+}
 
 	
 span {
@@ -112,7 +112,7 @@ span {
     float:  left;
     border: solid;
     margin: 20px 60px 20px 20px;
-	}
+}
 	
 .container { 
     width: 200px;
@@ -129,31 +129,22 @@ span {
     background:#000;
 }
 		 
-h1 {
-	color:#246B24;
-	text-align:center;
-	font-size:1.5em
-	}
-		  
-
 		 
 a {
 	color:#246B24;
 	background-color:transparent;
 	text-decoration:none;
 	display: inline-block;
-	}
-
-th {
-	color:#246B24;
-
-	}
-tr {
-	color:#246B24;
-	}
-td {
-	padding-left: 100px;
-  text-align: left;
-  vertical-align: middle;
 }
+	
+table, td {
+	padding-left: 100px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+th, tr {
+	color:#246B24;
+}
+
 	
